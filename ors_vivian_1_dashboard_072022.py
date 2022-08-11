@@ -7,9 +7,9 @@ from sklearn.preprocessing import MinMaxScaler
 import joblib
 
 # Import des fichiers, du modèle et du scaler :
-data = pd.read_csv("https://github.com/viviante79/Projet_7_Data-Scientist/blob/master/dataset/data_api?raw=true")
-model = joblib.load("https://github.com/viviante79/Projet_7_Data-Scientist/blob/master/dataset/LGBM_model?raw=true")
-scaler = joblib.load("https://github.com/viviante79/Projet_7_Data-Scientist/blob/master/dataset/Scaler?raw=true")
+data = pd.read_csv("https://github.com/viviante79/Projet_7_Data-Scientist/blob/master/dataset/data_api")
+model = joblib.load("https://github.com/viviante79/Projet_7_Data-Scientist/blob/master/dataset/LGBM_model")
+scaler = joblib.load("https://github.com/viviante79/Projet_7_Data-Scientist/blob/master/dataset/Scaler")
 
 # Configuration du tableau de bord :
 st.set_page_config(
