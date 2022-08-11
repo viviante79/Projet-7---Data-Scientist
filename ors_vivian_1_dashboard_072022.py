@@ -7,7 +7,7 @@ from sklearn.preprocessing import MinMaxScaler
 import joblib
 
 # Import des fichiers, du modèle et du scaler :
-path = "https://github.com/viviante79/Projet_7_Data-Scientist/tree/master/dataset/"
+path = "https://github.com/viviante79/Projet_7_Data-Scientist/dataset/"
 data = pd.read_csv(path+"data_api.csv", index_col=[0])
 model = joblib.load(path + "LGBM_model")
 scaler = joblib.load(path + "Scaler")
