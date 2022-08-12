@@ -1,5 +1,5 @@
 pandas
-steamlit
+streamlit
 matplotlib
 sklearn
 joblib
