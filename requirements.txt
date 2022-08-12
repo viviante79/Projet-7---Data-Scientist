@@ -1,0 +1,6 @@
+pandas
+steamlit
+matplotlib
+sklearn
+joblib
+lightgbm
