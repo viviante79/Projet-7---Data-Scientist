@@ -74,7 +74,7 @@ with graphique1 :
     	"Groupe" : ["Client", "Moyenne défaut de paiement"],
     	"Rythme paiement" : [df_MM["PAYMENT_RATE"].fillna(0), df_mean["PAYMENT_RATE"].mean()],
     	"Montant des annuités" : [1 - df_MM["AMT_ANNUITY"].fillna(0), 1 - df_mean["AMT_ANNUITY"].mean()],
-    	"Récence de l'emploi" : [1 - df_MM["DAYS_EMPLOYED"].fillna(0), 1 - df_mean["DAYS_EMPLOYED"].mean()],
+    	"Jours salariés" : [1 - df_MM["DAYS_EMPLOYED"].fillna(0), 1 - df_mean["DAYS_EMPLOYED"].mean()],
    	"Fiabilité paiement" : [1 - df_MM["INSTAL_DPD_MEAN"].fillna(0), 1 - df_mean["INSTAL_DPD_MEAN"].mean()], 
     	"Jeunesse" : [df_MM["DAYS_BIRTH"].fillna(0), df_mean["DAYS_BIRTH"].mean()],  
     	"Montant des biens achetés" : [df_MM["AMT_GOODS_PRICE"].fillna(0), df_mean["AMT_GOODS_PRICE"].mean()]
