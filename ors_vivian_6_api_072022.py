@@ -16,4 +16,4 @@ df = data[data["SK_ID_CURR"] == id_filter]
 query = df.drop(columns=["TARGET","SK_ID_CURR"])
 score = list(model.predict_proba(query))
 dictionnary = dict(zip(data["SK_ID_CURR"], score[:][:]))
-st(write(str(dictionnary)))
+st.json({data["SK_ID_CURR"], score[:][:]})
