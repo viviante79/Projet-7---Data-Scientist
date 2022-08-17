@@ -32,4 +32,4 @@ def get_ID(ID : int) :
 #    Will run on http://127.0.0.1:5000
 
 if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=5000)
+    uvicorn.run(app, host=https://viviante79-projet-7-data-scienti-ors-vivian-5-api-072022-ucevpb.streamlitapp.com/)
