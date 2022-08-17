@@ -13,7 +13,7 @@ id_filter = st.selectbox("Entrez identifiant client", pd.unique(data["SK_ID_CURR
 df = data[data["SK_ID_CURR"] == id_filter]
 
 # Affichage de la prédiction :
-prediction = int(model.predict(df.drop(columns=["TARGET","SK_ID_CURR"])))
-proba = model.predict_proba(df.drop(columns=["TARGET","SK_ID_CURR"]))
-proba = round(proba[0][0]*100,1)
-st.write(prediction, proba)
+query = df.drop(columns=["TARGET","SK_ID_CURR"])
+score = list(model.predict_proba(query))
+dictionnary = dict(zip(data["SK_ID_CURR"], score[:][:]))
+st(write(str(dictionnary)))
