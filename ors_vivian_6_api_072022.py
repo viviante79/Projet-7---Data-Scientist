@@ -15,4 +15,5 @@ df = data[data["SK_ID_CURR"] == id_filter]
 # Affichage de la prédiction :
 query = df.drop(columns=["TARGET","SK_ID_CURR"])
 score = list(model.predict_proba(query))
-st.json({"Id" : data["SK_ID_CURR"], "score" : score[0][0]})
+st.json({"Id" : df["SK_ID_CURR"], "score" : score[0][0]})
+
