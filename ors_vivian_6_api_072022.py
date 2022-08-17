@@ -19,5 +19,5 @@ st.json({"Id" : int(df["SK_ID_CURR"]), "score" : score[0][0]})
 
 query_all = data.drop(columns=["TARGET","SK_ID_CURR"])
 score_all = list(model.predict_proba(query_all))
-dictionnary = dict(zip(data["SK_ID_CURR"], score))
+dictionnary = dict(zip(data["SK_ID_CURR"], score_all))
 st.json(dictionnary)
