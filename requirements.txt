@@ -4,5 +4,3 @@ matplotlib
 sklearn
 joblib
 lightgbm
-uvicorn
-fastapi
